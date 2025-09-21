@@ -1,53 +1,130 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
-}
-
-header {
-  background-color: #007acc;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
   color: #fff;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 20%;
+  background-color: #1c1c1c;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 60%;
+  height: 28%;
+  border-radius: 30%;
+  background-color: #333;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  border-radius: 30%;
+}
+
+.icon {
+  width: 15%;
+  height: 15%;
+  filter: invert(1); /* Inverte il colore delle linee di un'immagine png --> da nero a bianco */
+  object-fit:cover;
+  margin-right: 5%;
+}
+
+.gitIcon {
+  width: 5%;
+  height: 5%;
+  filter: invert(1); /* Inverte il colore delle linee di un'immagine png --> da nero a bianco */
+  object-fit:cover;
+  margin-right: 2%;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
   text-align: center;
 }
 
-main {
-  padding: 2rem;
-  max-width: 900px;
-  margin: auto;
+.role {
+  background-color: #2e2e2e;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 20%;
 }
 
-.about, .projects {
-  margin-bottom: 2rem;
+.contact {
+  width: 100%;
+  font-size: 0.9rem;
 }
 
-.project {
-  background: #fff;
-  border: 1px solid #ddd;
-  padding: 1rem;
+.contact-item {
   margin-bottom: 1rem;
-  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.project h3 {
-  margin-top: 0;
+.item {
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-a {
-  color: #007acc;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-footer {
-  text-align: center;
+.main {
+  flex: 1;
   padding: 1rem;
-  background: #eee;
-  color: #666;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* sempre 2 colonne */
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr; /* passa a 1 colonna sotto i 640px */
+  }
+}
+
+.card {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.imgProject{
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.card-subtitle {
+  font-size: 0.85rem;
+  color: #aaa;
 }

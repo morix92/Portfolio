@@ -1,46 +1,58 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Il mio Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Ciao, sono [Il Tuo Nome]</h1>
-    <p>Sviluppatore Web • App Desktop • Node.js • Angular</p>
-  </header>
+    
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="avatar"><img src="assets/avatar1.png" alt=""></div>
+    <div class="name">Andrea Morimanno</div>
+    <div class="role">Web Developer</div>
+    <div class="contact">
+      <div class="contact-item"><img src="/assets/emailIcon.png" class="icon">an.morimanno@gmail.com</div>
+      <div class="contact-item"><img src="assets/telephoneIcon.png" class="icon">+39 3290361688</div>
+    </div>
+  </aside>
 
-  <main>
-    <section class="about">
-      <h2>Chi sono</h2>
-      <p>
-        Sono uno sviluppatore con 5 anni di esperienza in ambito IT.
-        Dopo anni nel testing e gestione di piattaforme come WSO2, ho deciso di dedicarmi allo sviluppo web.
-        Qui trovi alcuni progetti che ho realizzato per migliorare le mie competenze full stack.
-      </p>
-    </section>
+  <!-- Main Content -->
+  <main class="main">
+    <h1>Descrizione</h1>
+    <p>Nonostante il mio percorso formativo indirizzasse verso altre strade, nel 2020, con l'arrivo del Covid, ho colto l'occasione di poter lavorare nel mondo informatico, seppure questo volesse dire ripartire da zero; giorno dopo giorno ho colmato le mie enormi lacune con la curiosità, l'impegno e la capacità di apprendimento che mi contraddistinguono; ogni risposta mi ha portato verso altre domande, alimentando un ciclo continuo che ancora oggi sostiene la mia voglia di sapere e crescere.<br>
+    Negli ultimi anni mi sono occupato prima di attività di testing, per poi passare alla gestione di una piattaforma WSO2 - API Manager.<br>
+    Parallelamente, ho intrapreso un percorso di studio autonomo sulle basi della programmazione, approfondendo in particolare il linguaggio JavaScript, scelto come punto di partenza per avvicinarmi allo sviluppo full-stack; attualmente utilizzo Angular per lo sviluppo front-end e Node.js come runtime per la parte back-end.<br>
+    In questo portfolio troverai alcuni progetti realizzati a scopo didattico, pensati per mettere in pratica quanto appreso e per mostrare concretamente il mio percorso di crescita.</p>
+    
+    <h1>I Miei Progetti</h1>
+    
+    <!-- Griglia Progetti -->
+    <div class="grid">
 
-    <section class="projects">
-      <h2>I miei progetti</h2>
-
-      <div class="project">
-        <h3>🗂️ Task Manager Desktop App</h3>
-        <p>Un'app desktop per la gestione delle attività personali, sviluppata con Electron, Angular e Node.js. Include funzionalità di calendario, scadenze e notifiche.</p>
-        <a href="https://github.com/tuonomeutente/task-manager-app" target="_blank">🔗 Vai al repository</a>
+       <!-- Progetto 1 -->
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250" alt="App 1" class="imgProject">
+        <div class="card-content">
+          <div class="card-title">Task Management</div>
+          <div class="card-subtitle">Applicazione desktop per la gestione e la calendarizzazione delle proprie attività. <br>Prevede una funzione di notifica in prossimità della scadenza di un task</div>
+          <div class="item"><img src="assets/gitHubIcon.png" class="gitIcon"><a href="https://github.com/morix92?tab=repositories">Vai al Repository</a></div>
+        </div>
       </div>
 
-      <div class="project">
-        <h3>🌐 Mini Social App</h3>
-        <p>Social semplificato dove gli utenti postano pensieri, immagini o notizie visibili a tutti. I post si eliminano automaticamente dopo 24 ore.</p>
-        <a href="https://github.com/tuonomeutente/mini-social-app" target="_blank">🔗 Vai al repository</a>
+      <!-- Progetto 2 -->
+      <div class="card">
+        <img src="https://via.placeholder.com/400x250" alt="App 2" class="imgProject">
+        <div class="card-content">
+          <div class="card-title">PostBox24</div>
+          <div class="card-subtitle">Social per la pubblicazione di post all'interno di un unico contenitore, dove ogni post viene eliminato dopo 24h.<br>Prevede una funzione di filtraggio del contenitore per "Nazionalità" o altre preferenze degli utenti.</div>
+          <div class="item"><img src="assets/gitHubIcon.png" class="gitIcon"><a href="https://github.com/morix92?tab=repositories">Vai al Repository</a></div>
+        </div>
       </div>
-    </section>
+
+    </div>
   </main>
-
-  <footer>
-    <p>© 2025 [Il Tuo Nome] • <a href="https://github.com/tuonomeutente" target="_blank">GitHub</a></p>
-  </footer>
 </body>
 </html>

@@ -1,4 +1,4 @@
-#                                                                  BENVENUTO NEL MIO PORTFOLIO!  
+# BENVENUTI NEL MIO PORTFOLIO!  
 Qui ho raccolto alcuni progetti personali realizzati a scopo didattico, mettendo in pratica ciò che ho imparato nel mio percorso di formazione da sviluppatore.
 
 

@@ -7,7 +7,6 @@ body {
   min-height: 100vh;
 }
 
-/* Sidebar */
 .sidebar {
   width: 20%;
   background-color: #1c1c1c;
@@ -17,11 +16,16 @@ body {
   align-items: center;
 }
 
+.sidebar-left {
+   display: contents;
+}
+
 .avatar {
   width: 60%;
   height: 28%;
   border-radius: 30%;
   background-color: #333;
+  text-align: center;
   margin-top: 10%;
   margin-bottom: 10%;
 }
@@ -33,6 +37,12 @@ body {
   border-radius: 30%;
 }
 
+.logo{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+
 .icon {
   width: 15%;
   height: 15%;
@@ -42,11 +52,11 @@ body {
 }
 
 .gitIcon {
-  width: 5%;
-  height: 5%;
+  width: 25px;
+  height: 25px;
   filter: invert(1); /* Inverte il colore delle linee di un'immagine png --> da nero a bianco */
   object-fit:cover;
-  margin-right: 2%;
+  margin-right: 8px;
   border-radius: 50%;
 }
 
@@ -77,11 +87,19 @@ body {
   gap: 0.5rem;
 }
 
+.logo-item {
+  width: 30%;
+  margin-top: auto;
+  margin-top: 3rem;
+  align-self: flex-start;
+}
+
 .item {
   margin-top: 2%;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  font-size: 0.8rem;
 }
 
 .main {
@@ -93,12 +111,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr; /* sempre 2 colonne */
   gap: 1.5rem;
-}
-
-@media (max-width: 1024px) {
-  .grid {
-    grid-template-columns: 1fr; /* passa a 1 colonna sotto i 640px */
-  }
 }
 
 .card {
@@ -131,4 +143,88 @@ body {
 
 a {
   color: #4A90E2;
+}
+
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr; /* passa a 1 colonna sotto i 640px */
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  /* Contenitore sinistro: avatar, nome, ruolo */
+  .sidebar-left {
+    width: 100%;
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .logo-item {
+    display: none;
+  }
+  /* Contenitore destro: contatti */
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-right: 1.5rem;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .contact-item {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-self: center;
+  }
+
+  .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 30%;
+    background-color: #333;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .name {
+    font-size: 1rem;
+    margin: 0;
+    text-align: left;
+  }
+
+  .role {
+    width: 125px;
+    font-size: 0.8rem;
+    margin: 0;
+    background-color: #2e2e2e;
+    border-radius: 12px;
+    padding: 4px 10px;
+    text-align: center;
+  }
+
+  .main {
+    padding: 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }

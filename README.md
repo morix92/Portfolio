@@ -4,7 +4,7 @@ Qui ho raccolto alcuni progetti personali realizzati a scopo didattico, mettendo
 
 ### Tecnologie principali
 
-I progetti presenti in questo portfolio sono sviluppati attraverso l'utilizzo di:
+I progetti linkati all'interno di questo portfolio sono sviluppati attraverso l'utilizzo di:
 - HTML
 - CSS
 - JavaScript / TypeScript

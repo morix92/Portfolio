@@ -147,12 +147,6 @@ a {
 
 
 @media (max-width: 1024px) {
-  .grid {
-    grid-template-columns: 1fr; /* passa a 1 colonna sotto i 640px */
-  }
-}
-
-@media (max-width: 768px) {
   body {
     flex-direction: column;
   }
@@ -226,5 +220,11 @@ a {
 
   .grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    font-size: 0.70rem;
   }
 }

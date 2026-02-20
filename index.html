@@ -11,7 +11,7 @@
     
   <!-- Sidebar -->
   <aside class="sidebar">
-    <div class="sidebar-left">
+    <div class="profile">
         <div class="avatar"><img src="./assets/avatar.png" alt="Avatar"></div>
         <div class="name">Andrea Morimanno</div>
         <div class="role">Web Developer</div>
@@ -25,24 +25,46 @@
 
   <!-- Main Content -->
   <main class="main">
-    <h2>Descrizione</h2>
-    <p>Nonostante il mio percorso formativo indirizzasse verso altre strade, nel 2020, con l'arrivo del Covid, ho colto l'occasione di poter lavorare nel mondo informatico, seppure questo volesse dire ripartire da zero; giorno dopo giorno ho colmato le mie enormi lacune con la curiosità, l'impegno e la capacità di apprendimento che mi contraddistinguono; ogni risposta mi ha portato verso altre domande, alimentando un ciclo continuo che ancora oggi sostiene la mia voglia di sapere e crescere.<br>
+    <h2 class="title">Descrizione</h2>
+    <p class="description">Nonostante il mio percorso formativo indirizzasse verso altre strade, nel 2020, con l'arrivo del Covid, ho colto l'occasione di poter lavorare nel mondo informatico, seppure questo volesse dire ripartire da zero; giorno dopo giorno ho colmato le mie enormi lacune con la curiosità, l'impegno e la capacità di apprendimento che mi contraddistinguono; ogni risposta mi ha portato verso altre domande, alimentando un ciclo continuo che ancora oggi sostiene la mia voglia di sapere e crescere.<br>
     Negli ultimi anni mi sono occupato prima di attività di testing, per poi passare alla gestione di una piattaforma basata su WSO2 - API Manager.<br>
     Parallelamente, ho intrapreso un percorso di studio autonomo sulle basi della programmazione, approfondendo in particolare il linguaggio JavaScript, scelto come punto di partenza per avvicinarmi allo sviluppo full-stack; attualmente utilizzo Angular per lo sviluppo front-end e Node.js come runtime per la parte back-end.<br>
     In questo portfolio troverai alcuni progetti realizzati a scopo didattico, pensati per mettere in pratica quanto appreso e per mostrare concretamente il mio percorso di crescita.</p>
     
-    <h2>I Miei Progetti</h2>
+    <h2 class="title">I Miei Progetti</h2>
     
     <!-- Griglia Progetti -->
     <div class="grid">
 
        <!-- Progetto 1 -->
       <div class="card">
-        <img src="./assets/taskManager.png" alt="App 1" class="imgProject">
+        <img src="./progetti/TaskManager/taskManager.png" alt="App 1" class="imgProject">
         <div class="card-content">
           <div class="card-title">Task Manager</div>
-          <div class="card-subtitle">Applicazione desktop per la gestione e la calendarizzazione delle proprie attività. <br>Prevede una funzione per la ricezione di notifiche relative ai task e alle sue scadenze</div>
-          <div class="item"><img src="./assets/gitHubIcon.png" class="gitIcon"><a href="https://github.com/morix92/Tasks-Manager">Vai al Repository</a></div>
+          <div class="card-subtitle">Applicazione desktop per la gestione, la pianificazione e il monitoraggio delle attività personali, senza dipendenze esterne o servizi cloud.<br>Progettata per garantire organizzazione, tracciabilità e gestione efficiente del tempo, prevede una funzione per la ricezione di notifiche windows, dal suono personalizzato.<br>I profili sono stati pensati per creare una distinzione netta, che può essere tra persone fisiche o anche tra tipologie di attività (lavoro, personali, ecc); inoltre, all'interno di ogni profilo, sono presenti le categorie, completamente personalizzabili.<br>Avatar e suono delle notifiche sono anch'esse personalizzabili, seguendo le indicazioni presenti nelle FAQ all'interno dell'applicazione.</div>
+          <div class="item">
+            <div class="itemLink"><img src="./assets/gitHubIcon.png" class="gitIcon"><a href="https://github.com/morix92/Tasks-Manager">Vai al Repository</a></div>
+            <div class="itemLink"><img src="./assets/download.png" class="gitIcon"><a href="progetti/TaskManager/TaskManager_1.2.0_x64-setup.exe" download>Scarica installer Windows (64 bit)</a></div>
+          </div>
+
+          <!-- Bottone Approfondimento -->
+          <button class="toggle-btn" onclick="toggleDetails(this)">
+            <span>Approfondimento Tecnico</span>
+            <span class="arrow">&#9662;</span>
+          </button>
+
+          <div class="card-details">
+            <p>Tecnologie di sviluppo utilizzate:</p>
+            <ul>
+              <li>HTML: Struttura di base;</li>
+              <li>CSS: Styling dell'interfaccia e design responsive;</li>
+              <li>JavaScript / TypeScript: Linguaggi per la logica di business e l'interattività;</li>
+              <li>Angular: Sviluppo di un'interfaccia utente dinamica e reattiva;</li>
+              <li>Node.js + Express: Gestione delle richieste HTTP e sviluppo di API lato Server;</li>
+              <li>SQLite: Database relazionale leggero e integrato;</li>
+              <li>Tauri: Distribuzione dell'applicazione e gestione notifiche;</li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -51,15 +73,42 @@
         <img src="" alt="App 2" class="imgProject">
         <div class="card-content">
           <div class="card-title">PostBox24</div>
-          <div class="card-subtitle">Social per la pubblicazione di post all'interno di un unico contenitore, dove ogni post viene eliminato dopo 24h.<br>Prevede una funzione di filtraggio del contenitore per "Nazionalità" o altre preferenze degli utenti.</div>
+          <div class="card-subtitle">Applicazione Web di tipo “Social Media”, dove tutti i contenuti convivono in un unico "contenitore" pubblico; senza follower né amicizie, le interazioni sono basate sui contenuti e non sulle persone, aumentando il livello di qualità e spontaneità dei contenuti stessi.<br>Il tema verde e bianco è ispirato ai colori irlandesi, da sempre considerata una popolazione con grande senso di comunità e condivisione.<br>Ogni post può ricevere like o commenti ma viene eliminato dopo 24h, diminuendo la pressione sociale, la paura del giudizio e la costruzione del personaggio.<br>Al fine di personalizzare la visualizzazione e ridurre il numero dei contenuti, è prevista una funzione di filtraggio per: - lingua/nazionalità; - categorie come "sport", "politica", ecc; - tematiche del momento.</div>
           <div class="item"><img src="./assets/gitHubIcon.png" class="gitIcon"><a href="https://github.com/morix92?tab=repositories">Vai al Repository</a></div>
         </div>
       </div>
 
     </div>
   </main>
+
+
+<script>
+  function toggleDetails(button) {
+    const details = button.nextElementSibling;
+    const arrow = button.querySelector(".arrow");
+    const card = button.closest(".card");
+    const isOpening = !details.classList.contains("open");
+
+    details.classList.toggle("open");
+    arrow.classList.toggle("rotate");
+
+    if (isOpening) {
+      setTimeout(() => {
+        const cardBottom = card.getBoundingClientRect().bottom;
+        const viewportHeight = window.innerHeight;
+
+        if (cardBottom > viewportHeight) {
+          card.scrollIntoView({
+            behavior: "smooth",
+            block: "end"
+          });
+        }
+      }, 300); // tempo sincronizzato con animazione CSS
+    }
+  }
+</script>
+
 </body>
 </html>
-
 
 

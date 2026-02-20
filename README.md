@@ -1,6 +1,7 @@
 # BENVENUTI NEL MIO PORTFOLIO!  
 Qui ho raccolto alcuni progetti personali realizzati a scopo didattico, mettendo in pratica ciò che ho imparato nel mio percorso di formazione da sviluppatore.
 
+https://morix92.github.io/Portfolio/
 
 ### Tecnologie principali
 
@@ -15,4 +16,3 @@ I progetti linkati all'interno di questo portfolio sono sviluppati attraverso l'
 - Tauri: Distribuzione di applicazioni desktop cross-platform;
 - Docker: containerizzazione dell'intero ambiente applicativo (frontend, backend e database) per garantire portabilità, semplicità di avvio e riproducibilità del progetto.
 
-https://morix92.github.io/Portfolio/

@@ -70,11 +70,35 @@
 
       <!-- Progetto 2 -->
       <div class="card">
-        <img src="" alt="App 2" class="imgProject">
+        <img src="./progetti/PostBox24/PostBox24.png" alt="App 2" class="imgProject">
         <div class="card-content">
           <div class="card-title">PostBox24</div>
           <div class="card-subtitle">Applicazione Web di tipo “Social Media”, dove tutti i contenuti convivono in un unico "contenitore" pubblico; senza follower né amicizie, le interazioni sono basate sui contenuti e non sulle persone, aumentando il livello di qualità e spontaneità dei contenuti stessi.<br>Il tema verde e bianco è ispirato ai colori irlandesi, da sempre considerata una popolazione con grande senso di comunità e condivisione.<br>Ogni post può ricevere like o commenti ma viene eliminato dopo 24h, diminuendo la pressione sociale, la paura del giudizio e la costruzione del personaggio.<br>Al fine di personalizzare la visualizzazione e ridurre il numero dei contenuti, è prevista una funzione di filtraggio per: - lingua/nazionalità; - categorie come "sport", "politica", ecc; - tematiche del momento.</div>
-          <div class="item"><img src="./assets/gitHubIcon.png" class="gitIcon"><a href="https://github.com/morix92?tab=repositories">Vai al Repository</a></div>
+          <div class="item">
+            <div class="itemLink">
+              <img src="./assets/gitHubIcon.png" class="gitIcon"><a href="https://github.com/morix92?tab=repositories">Vai al Repository</a>
+            </div>
+          </div>
+
+                 <!-- Bottone Approfondimento -->
+          <button class="toggle-btn" onclick="toggleDetails(this)">
+            <span>Approfondimento Tecnico</span>
+            <span class="arrow">&#9662;</span>
+          </button>
+
+          <div class="card-details">
+            <p>Tecnologie di sviluppo utilizzate:</p>
+            <ul>
+              <li>HTML: Struttura di base;</li>
+              <li>CSS: Styling dell'interfaccia e design responsive;</li>
+              <li>JavaScript / TypeScript: Linguaggi per la logica di business e l'interattività;</li>
+              <li>Angular: Sviluppo di un'interfaccia utente dinamica e reattiva;</li>
+              <li>Node.js + Express: Gestione delle richieste HTTP e sviluppo di API lato Server;</li>
+              <li>PostgreSQL: Database relazionale per la persistenza dei dati;</li>
+              <li>Docker: containerizzazione dell'intero ambiente applicativo (frontend, backend e database) per garantire portabilità, semplicità di avvio e riproducibilità del progetto.</li>
+            </ul>
+          </div>
+
         </div>
       </div>
 

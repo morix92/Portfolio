@@ -22,9 +22,9 @@ body {
 
 .avatar {
   width: 75%;
-  height: 28%;
+  height: auto;
   border-radius: 30%;
-  background-color: #333;
+  background-color: transparent;
   text-align: center;
   margin-top: 10%;
   margin-bottom: 10%;
@@ -262,10 +262,10 @@ a:hover {
   }
 
   .avatar {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: auto;
     border-radius: 30%;
-    background-color: #333;
+    background-color: transparent;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }

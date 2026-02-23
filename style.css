@@ -299,4 +299,14 @@ a:hover {
   .contact-item {
     font-size: 0.65rem;
   }
+
+  .avatar {
+    width: 150px;
+    height: auto;
+    border-radius: 30%;
+    background-color: transparent;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
 }

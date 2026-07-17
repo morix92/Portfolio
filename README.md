@@ -5,14 +5,26 @@ https://morix92.github.io/Portfolio/
 
 ### Tecnologie principali
 
-I progetti linkati all'interno di questo portfolio sono sviluppati attraverso l'utilizzo di tecnologie moderne per lo sviluppo full-stack, tra cui:
-- HTML: Struttura di base delle pagine web;
-- CSS: Styling e design responsive;
-- JavaScript / TypeScript: per la logica di business e l'interattività;
-- Angular: per la creazione di interfacce utente dinamiche e reattive;
-- Node.js + Express: per gestire le richieste HTTP e le API;
-- PostgreSQL: Database relazionale per la persistenza dei dati;
-- SQLite: Database leggero per applicazioni locali o embedded;
-- Tauri: Distribuzione di applicazioni desktop cross-platform;
-- Docker: containerizzazione dell'intero ambiente applicativo (frontend, backend e database) per garantire portabilità, semplicità di avvio e riproducibilità del progetto.
+I progetti presenti in questo portfolio variano dallo sviluppo web full-stack allo sviluppo di applicazioni Android, utilizzando tecnologie moderne per la realizzazione di interfacce, servizi backend e applicazioni embedded.
 
+### Linguaggi
+- **HTML**: struttura delle pagine web;
+- **CSS**: styling e design responsive;
+- **JavaScript / TypeScript**: sviluppo di applicazioni web full-stack;
+- **Kotlin**: sviluppo di applicazioni Android native.
+
+### Framework e librerie
+- **Angular**: framework per la realizzazione di Single Page Application (SPA);
+- **Express**: framework per lo sviluppo di API REST con Node.js;
+- **NanoHTTPD**: server HTTP embedded per applicazioni Android.
+
+### Runtime
+- **Node.js**: ambiente di esecuzione per applicazioni JavaScript lato server.
+
+### Database
+- **PostgreSQL**: database relazionale;
+- **SQLite**: database leggero per applicazioni locali o embedded;.
+
+### Deployment
+- **Tauri**: distribuzione di applicazioni desktop cross-platform;
+- **Docker**: containerizzazione dell'ambiente applicativo.

@@ -41,7 +41,7 @@
         <img src="./progetti/TaskManager/taskManager.png" alt="App 1" class="imgProject">
         <div class="card-content">
           <div class="card-title">Task Manager</div>
-          <div class="card-subtitle">Applicazione desktop per la gestione, la pianificazione e il monitoraggio delle attività personali, senza dipendenze esterne o servizi cloud.<br>Progettata per garantire organizzazione, tracciabilità e gestione efficiente del tempo, prevede una funzione per la ricezione di notifiche windows, dal suono personalizzato.<br>I profili sono stati pensati per creare una distinzione netta, che può essere tra persone fisiche o anche tra tipologie di attività (lavoro, personali, ecc); inoltre, all'interno di ogni profilo, sono presenti le categorie, completamente personalizzabili.<br>Avatar e suono delle notifiche sono anch'esse personalizzabili, seguendo le indicazioni presenti nelle FAQ all'interno dell'applicazione.</div>
+          <div class="card-subtitle">Applicazione desktop per la gestione, la pianificazione e il monitoraggio delle attività personali, senza dipendenze esterne o servizi cloud.<br>Progettata per garantire organizzazione, tracciabilità e gestione efficiente del tempo, prevede una funzione per la ricezione di notifiche windows, dal suono personalizzato.<br>I profili sono stati pensati per creare una distinzione netta, che può essere tra persone fisiche o anche tra tipologie di attività (lavorative, personali, ecc); inoltre, all'interno di ogni profilo sono presenti le categorie, completamente personalizzabili, che offrono un livello aggiuntivo di suddivisione dei task.<br>Avatar e suono delle notifiche sono anch'esse personalizzabili, seguendo le indicazioni presenti nelle FAQ all'interno dell'applicazione.</div>
           <div class="item">
             <div class="itemLink"><img src="./assets/gitHubIcon.png" class="gitIcon"><a href="https://github.com/morix92/Tasks-Manager">Vai al Repository</a></div>
             <div class="itemLink"><img src="./assets/download.png" class="gitIcon"><a href="progetti/TaskManager/TaskManager_2.0.0_x64-setup.exe" download>Scarica installer Windows (64 bit)</a></div>
@@ -56,13 +56,13 @@
           <div class="card-details">
             <p>Tecnologie di sviluppo utilizzate:</p>
             <ul>
-              <li>HTML: Struttura di base;</li>
-              <li>CSS: Styling dell'interfaccia e design responsive;</li>
-              <li>JavaScript / TypeScript: Linguaggi per la logica di business e l'interattività;</li>
-              <li>Angular 21: Sviluppo di un'interfaccia utente dinamica e reattiva;</li>
-              <li>Node.js + Express: Gestione delle richieste HTTP e sviluppo di API lato Server;</li>
-              <li>SQLite: Database relazionale leggero e integrato;</li>
-              <li>Tauri: Distribuzione dell'applicazione e gestione notifiche;</li>
+              <li>HTML: struttura delle pagine web;</li>
+              <li>CSS: styling e design responsive;</li>
+              <li>JavaScript / TypeScript: linguaggi di sviluppo full-stack;</li>
+              <li>Angular 21: framework per la realizzazione di Single Page Application (SPA);</li>
+              <li>Node.js + Express: gestione delle richieste HTTP e sviluppo di API lato Server;</li>
+              <li>SQLite: database relazionale embedded</li>
+              <li>Tauri: distribuzione dell'applicazione e gestione notifiche;</li>
             </ul>
           </div>
         </div>
@@ -89,18 +89,54 @@
           <div class="card-details">
             <p>Tecnologie di sviluppo utilizzate:</p>
             <ul>
-              <li>HTML: Struttura di base;</li>
-              <li>CSS: Styling dell'interfaccia e design responsive;</li>
-              <li>JavaScript / TypeScript: Linguaggi per la logica di business e l'interattività;</li>
-              <li>Angular 21: Sviluppo di un'interfaccia utente dinamica e reattiva;</li>
-              <li>Node.js + Express: Gestione delle richieste HTTP e sviluppo di API lato Server;</li>
-              <li>PostgreSQL: Database relazionale per la persistenza dei dati;</li>
-              <li>Docker: containerizzazione dell'intero ambiente applicativo (frontend, backend e database) per garantire portabilità, semplicità di avvio e riproducibilità del progetto.</li>
+              <li>HTML: struttura delle pagine web;</li>
+              <li>CSS: styling e design responsive;</li>
+              <li>JavaScript / TypeScript: linguaggi di sviluppo full-stack;</li>
+              <li>Angular 21: framework per la realizzazione di Single Page Application (SPA);</li>
+              <li>Node.js + Express: gestione delle richieste HTTP e sviluppo di API lato Server;</li>
+              <li>PostgreSQL: database relazionale;</li>
+              <li>Docker: containerizzazione dell'ambiente applicativo (frontend, backend e database) per garantire portabilità, semplicità di avvio e riproducibilità del progetto.</li>
             </ul>
           </div>
 
         </div>
       </div>
+
+      <!-- Progetto 3 -->
+      <div class="card">
+        <img src="./progetti/HomeHub/HomeHub.png" alt="App 3" class="imgProject">
+        <div class="card-content">
+          <div class="card-title">HomeHub</div>
+          <div class="card-subtitle">Home Hub è un'applicazione Android pensata per essere eseguita su un tablet domestico sempre acceso e accessibile tramite browser da qualsiasi altro dispositivo (non solo Android) presente nella stessa rete locale. L'obiettivo è creare un hub centralizzato per la gestione di attività quotidiane, condiviso tra i componenti della famiglia e accessibile tramite smartphone, oltre che tramite il tablet stesso; le funzionalità principali previste nella prima versione del prodotto sono: task Manager con notifiche, lista della Spesa e bacheca (post-it)</div>
+          <div class="item">
+            <div class="itemLink">
+              <img src="./assets/gitHubIcon.png" class="gitIcon"><a href="https://github.com/morix92/HomeHub">Vai al Repository</a>
+              <div class="itemLink"><img src="./assets/download.png" class="gitIcon"><a href="progetti/HomeHub/HomeHub_Milestone1.apk" download>Scarica APK Android</a></div>
+            </div>
+          </div>
+
+                 <!-- Bottone Approfondimento -->
+          <button class="toggle-btn" onclick="toggleDetails(this)">
+            <span>Approfondimento Tecnico</span>
+            <span class="arrow">&#9662;</span>
+          </button>
+
+          <div class="card-details">
+            <p>Tecnologie di sviluppo utilizzate:</p>
+            <ul>
+              <li>HTML: struttura delle pagine;</li>
+              <li>CSS: styling e design responsive;</li>
+              <li>JavaScript / TypeScript: linguaggi di sviluppo frontend;</li>
+              <li>Angular 21: framework per la realizzazione di Single Page Application (SPA);</li>
+              <li>Kotlin: linguaggio di sviluppo per applicazioni Android native;</li>
+              <li>NanoHTTPD: server HTTP embedded per applicazioni Android;</li>
+              <li>SQLite: database relazionale embedded</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
 
     </div>
   </main>

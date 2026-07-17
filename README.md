@@ -22,7 +22,7 @@ I progetti presenti in questo portfolio variano dallo sviluppo web full-stack al
 
 ### Database
 - **PostgreSQL**: database relazionale;
-- **SQLite**: database leggero per applicazioni locali o embedded;.
+- **SQLite**: database relazionale embedded.
 
 ### Deployment
 - **Tauri**: distribuzione di applicazioni desktop cross-platform;

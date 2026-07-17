@@ -13,15 +13,15 @@ body {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .profile {
-   display: contents;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .avatar {
-  width: 75%;
   height: auto;
   border-radius: 30%;
   background-color: transparent;
@@ -31,8 +31,7 @@ body {
 }
 
 .avatar img {
-  width: 100%;
-  height: 100%;
+  width: 180px;
   object-fit:cover;
   border-radius: 30%;
 }
@@ -44,11 +43,10 @@ body {
 }
 
 .icon {
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
   filter: invert(1); /* Inverte il colore delle linee di un'immagine png --> da nero a bianco */
   object-fit:cover;
-  margin-right: 5%;
 }
 
 .gitIcon {
@@ -61,7 +59,7 @@ body {
 }
 
 .name {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
   text-align: center;
@@ -76,7 +74,8 @@ body {
 }
 
 .contact {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-item {
@@ -88,9 +87,8 @@ body {
 }
 
 .logo-item {
-  width: 30%;
+  width: 50%;
   margin-top: 3rem;
-  align-self: flex-start;
 }
 
 .item {
@@ -225,72 +223,67 @@ a:hover {
 
 
 @media (max-width: 1024px) {
+
   body {
     flex-direction: column;
   }
 
   .sidebar {
-    display: flex;
     width: auto;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    height: 200px;
     padding: 1rem;
-    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
   }
 
   .profile {
-    width: 100%;
-    margin-left: 1.5rem;
     display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
+    align-items: center;
+    gap: 0.3rem 1.5rem;
+  }
+
+  .avatar {
+    margin-left: 50px;
+    margin-right: 250px;
+  }
+
+  .avatar img {
+    width: 150px;
+  }
+
+  .name {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+
+  .role {
+    font-size: 1rem;
+    padding: 6px 10px;
+    margin-bottom: 25px;
+  }
+
+  .contact-item {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+  }
+
+  .icon {
+    width: 26px;
+    height: 26px;
   }
 
   .logo-item {
     display: none;
   }
 
-  .contact {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    margin-right: 1.5rem;
-    gap: 0.5rem;
-    font-size: 1rem;
+  .description {
+    font-size: 14px;
   }
 
-  .contact-item {
-    margin-bottom: 0px;
-  }
-
-  .avatar {
-    width: 200px;
-    height: auto;
-    border-radius: 30%;
-    background-color: transparent;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .name {
-    font-size: 1rem;
-    margin: 0;
-    text-align: left;
-  }
-
-  .role {
-    width: 125px;
-    font-size: 0.8rem;
-    margin: 0;
-    background-color: #2e2e2e;
-    border-radius: 12px;
-    padding: 4px 10px;
-    text-align: center;
-  }
-
-  .main {
-    padding: 1rem;
+  .description p {
+      margin-bottom: 0.9rem;
   }
 
   .grid {
@@ -298,18 +291,89 @@ a:hover {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+   
   .contact-item {
-    font-size: 0.65rem;
+    font-size: 0.7rem;
   }
 
-  .avatar {
-    width: 150px;
-    height: auto;
-    border-radius: 30%;
-    background-color: transparent;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  .icon {
+    width: 22px;
+    height: 22px;
   }
+
+  .avatar {  
+    margin-left: 50px;
+    margin-right: 120px;
+  }
+
+  .name {
+    font-size: 1.1rem;
+  }
+
+  .role {
+    font-size: 0.9rem;
+    margin-bottom: 18px;
+  }
+
+  .avatar img {
+    width: 125px;
+  }
+
+  .sidebar {
+    height: 150px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+  .description p {
+      margin-bottom: 0.75rem;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .contact-item {
+    font-size: 0.7rem;
+  }
+
+  .icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .avatar {  
+    margin-left: 20px;
+    margin-right: 70px;
+  }
+  
+  .avatar img {
+    width: 100px;
+  }
+
+  .name {
+    font-size: 0.9rem;
+  }
+
+  .role {
+    font-size: 0.7rem;
+    margin-bottom: 12px;
+  }
+
+  .sidebar {
+    height: 120px;
+  }
+
+  .description {
+    font-size: 11px;
+  }
+
+  .description p {
+      margin-bottom: 0.65rem;
+  }
+
 
 }

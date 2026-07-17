@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: #121212;
   color: #fff;
   display: flex;
@@ -43,8 +42,8 @@ body {
 }
 
 .icon {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   filter: invert(1); /* Inverte il colore delle linee di un'immagine png --> da nero a bianco */
   object-fit:cover;
 }
@@ -106,7 +105,6 @@ body {
 }
 
 .description {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 16px;
   margin-top: 0px;
 }
@@ -246,7 +244,7 @@ a:hover {
 
   .avatar {
     margin-left: 50px;
-    margin-right: 250px;
+    margin-right: 200px;
   }
 
   .avatar img {
@@ -270,8 +268,8 @@ a:hover {
   }
 
   .icon {
-    width: 26px;
-    height: 26px;
+    width: 25px;
+    height: 25px;
   }
 
   .logo-item {
@@ -298,13 +296,13 @@ a:hover {
   }
 
   .icon {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
   }
 
   .avatar {  
     margin-left: 50px;
-    margin-right: 120px;
+    margin-right: 90px;
   }
 
   .name {
@@ -341,13 +339,13 @@ a:hover {
   }
 
   .icon {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
   }
 
   .avatar {  
-    margin-left: 20px;
-    margin-right: 70px;
+    margin-left: 15px;
+    margin-right: 45px;
   }
   
   .avatar img {
@@ -368,7 +366,7 @@ a:hover {
   }
 
   .description {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .description p {

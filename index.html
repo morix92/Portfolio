@@ -34,17 +34,24 @@
     <h2 class="title">Descrizione</h2>
     <div class="description">
       <p>
-          Nonostante il mio percorso formativo fosse orientato verso altri ambiti, nel 2020, con l'arrivo della pandemia, ho colto l'opportunità di entrare nel mondo dell'informatica, anche se questo significava ripartire da zero.<br>
-          Giorno dopo giorno ho colmato le mie lacune con curiosità e impegno, alimentando un processo di apprendimento continuo che ancora oggi sostiene la mia voglia di crescere e migliorare.<br>
-          Inizialmente mi sono occupato di attività di software testing, per poi passare alla gestione di piattaforme API Gateway basate prima su WSO2 API Manager e successivamente su GovWay, approfondendo concetti legati alla sicurezza delle API come: OAuth2, Single Sign-On e la gestione di token e autorizzazioni.
+        Nonostante il mio percorso formativo fosse orientato verso altri ambiti, nel 2020, con l'arrivo della pandemia, ho colto 
+        l'opportunità di entrare nel mondo dell'informatica, anche se questo significava ripartire da zero.
+        <br>
+        Giorno dopo giorno ho colmato le mie lacune con curiosità e impegno, alimentando un processo di apprendimento continuo che 
+        ancora oggi sostiene la mia voglia di crescere e migliorare.
       </p>
       <p>
-          Parallelamente, ho intrapreso un percorso di studio autonomo sulle basi della programmazione, approfondendo in particolare il linguaggio JavaScript, scelto come punto di partenza per avvicinarmi allo sviluppo full-stack; generalmente utilizzo Angular per lo sviluppo front-end e Node.js come runtime per la parte back-end.<br>
-          Utilizzo strumenti di Intelligenza Artificiale come supporto allo studio, alla sperimentazione e all'approfondimento di nuove tecnologie; questo mi ha permesso di accelerare l'apprendimento e ampliare le mie competenze, realizzando anche applicazioni Android in Kotlin.<br>
-          Il mio obiettivo è continuare a crescere come sviluppatore full-stack, consolidando le competenze già acquisite e affrontando progetti sempre più complessi.
-      </p>
+        Inizialmente mi sono occupato di attività di software testing, per poi passare alla gestione di piattaforme API Gateway 
+        basate prima su WSO2 API Manager e successivamente su GovWay.
+        <br>
+        Parallelamente, ho intrapreso un percorso di studio autonomo sulle basi della programmazione, approfondendo in particolare 
+        il linguaggio JavaScript, scelto come punto di partenza per avvicinarmi allo sviluppo full-stack.
       <p>
-          In questo portfolio ho raccolto alcuni dei progetti realizzati a scopo didattico, pensati per mettere in pratica quanto appreso e per mostrare concretamente il mio percorso di crescita.
+        I progetti presenti in questo portfolio sono stati sviluppati seguendo un percorso di apprendimento progressivo, utilizzando 
+        ogni nuova esperienza progettuale come un'opportunità per ampliare il mio bagaglio tecnico. 
+        <br>
+        Partendo dalle competenze full-stack acquisite, ho progressivamente approfondito la progettazione architetturale, la 
+        containerizzazione e lo sviluppo Android, con l'obiettivo di sperimentare tecnologie e approcci differenti.
       </p>
     </div>
     <h2 class="title">I Miei Progetti</h2>
@@ -56,8 +63,21 @@
       <div class="card">
         <img src="./progetti/TaskManager/taskManager.png" alt="App 1" class="imgProject">
         <div class="card-content">
-          <div class="card-title">Task Manager</div>
-          <div class="card-subtitle">Applicazione desktop per la gestione, la pianificazione e il monitoraggio delle attività personali, senza dipendenze esterne o servizi cloud.<br>Progettata per garantire organizzazione, tracciabilità e gestione efficiente del tempo, prevede una funzione per la ricezione di notifiche windows, dal suono personalizzato.<br>I profili sono stati pensati per creare una distinzione netta, che può essere tra persone fisiche o anche tra tipologie di attività (lavorative, personali, ecc); inoltre, all'interno di ogni profilo sono presenti le categorie, completamente personalizzabili, che offrono un livello aggiuntivo di suddivisione dei task.<br>Avatar e suono delle notifiche sono anch'esse personalizzabili, seguendo le indicazioni presenti nelle FAQ all'interno dell'applicazione.</div>
+          <p class="card-title">Task Manager</p>
+          <p class="card-subtitle">
+            Task Manager è un'applicazione desktop progettata per la gestione, la pianificazione e il monitoraggio delle attività 
+            personali, senza necessità di dipendere da servizi esterni o piattaforme cloud.
+            <br>
+            È possibile creare fino a 4 profili distinti, ciascuno caratterizzato da una gestione indipendente delle proprie categorie e 
+            delle proprie attività. I profili non richiedono autenticazione e sono pensati per consentire anche a più persone, 
+            come familiari o conviventi, di condividere la stessa applicazione mantenendo separate le rispettive organizzazioni.
+            <br>
+            Il sistema integra inoltre un meccanismo di notifiche Windows che permette di ricevere promemoria relativi alle attività, 
+            indipendentemente dal profilo attualmente selezionato. 
+            <br>
+            L'avatar e il suono associati alle notifiche possono essere 
+            personalizzati seguendo le indicazioni disponibili nelle FAQ dell'applicazione.
+          </p>
           <div class="item">
             <div class="itemLink">
               <img src="./assets/gitHubIcon.png" class="gitIcon"><a href="https://github.com/morix92/Tasks-Manager">Vai al Repository</a>
@@ -74,15 +94,36 @@
           </button>
 
           <div class="card-details">
-            <p>Tecnologie di sviluppo utilizzate:</p>
-            <ul>
-              <li>HTML: struttura delle pagine web;</li>
+            <p class="card-title">Focus del progetto</p>
+            <p class="card-subtitle">
+              Applicazione desktop: cura nell'interfaccia utente, distribuzione locale e portabilità dei dati
+            </p>
+            <p class="card-title">Descrizione e scelte progettuali</p>
+            <p class="card-subtitle">
+              Il progetto è stato sviluppato con l'obiettivo di realizzare un'applicazione desktop installabile ed eseguibile localmente, 
+              approfondendo lo sviluppo full-stack nell'ecosistema JavaScript/TypeScript e l'integrazione tra tecnologie web e 
+              funzionalità native del sistema operativo.
+            <br>
+              L'applicazione combina un'interfaccia utente moderna e accattivante realizzata con Angular, un backend basato su Node.js 
+              ed Express, organizzato attraverso una struttura modulare e dedicato alla gestione della logica applicativa e delle API, 
+              e un database relazionale embedded per la persistenza dei dati. 
+            <br>
+              La scelta di SQLite è motivata dalla sua leggerezza e portabilità: non richiedendo un server database separato, consente 
+              di gestire i dati direttamente in locale, semplificando la distribuzione e l'esecuzione dell'applicazione.
+            <br>
+              Grazie a Tauri, l'applicazione viene distribuita come software desktop e integra alcune funzionalità native previste, 
+              come le notifiche di Windows.
+            </p>
+
+            <p class="card-title">Tecnologie utilizzate</p>
+            <ul class="card-subtitle">
+              <li>HTML: struttura dei contenuti dell'interfaccia utente;</li>
               <li>CSS: styling e design responsive;</li>
-              <li>JavaScript / TypeScript: linguaggi di sviluppo full-stack;</li>
+              <li>JavaScript / TypeScript: sviluppo frontend e backend;</li>
               <li>Angular 21: framework per la realizzazione di Single Page Application (SPA);</li>
-              <li>Node.js + Express: gestione delle richieste HTTP e sviluppo di API lato Server;</li>
-              <li>SQLite: database relazionale embedded</li>
-              <li>Tauri: distribuzione dell'applicazione e gestione notifiche;</li>
+              <li>Node.js + Express: implementazione delle API REST e gestione della logica applicativa lato server;</li>
+              <li>SQLite: database relazionale embedded per la persistenza locale dei dati;</li>
+              <li>Tauri: distribuzione dell'applicazione e gestione notifiche.</li>   
             </ul>
           </div>
         </div>
@@ -90,13 +131,30 @@
 
       <!-- Progetto 2 -->
       <div class="card">
-        <img src="./progetti/PostBox24/PostBox24.png" alt="App 2" class="imgProject">
+        <img src="./progetti/LinkVault/LinkVault.png" alt="App 2" class="imgProject">
         <div class="card-content">
-          <div class="card-title">PostBox24</div>
-          <div class="card-subtitle">Applicazione Web di tipo “Social Media”, dove tutti i contenuti convivono in un unico "contenitore" pubblico; senza follower né amicizie, le interazioni sono basate sui contenuti e non sulle persone, aumentando il livello di qualità e spontaneità dei contenuti stessi.<br>Ogni post può ricevere like o commenti, ma viene eliminato dopo 24h, diminuendo la pressione sociale, la paura del giudizio e la costruzione del personaggio.<br>Al fine di personalizzare la visualizzazione e ridurre il numero dei contenuti, è prevista una funzione di filtraggio per: - lingua/nazionalità; - categorie come "sport", "politica", ecc; - tematiche del momento.<br>Il tema verde e bianco è ispirato ai colori irlandesi, da sempre considerata una popolazione con grande senso di comunità e condivisione.</div>
+          <p class="card-title">LinkVault</p>
+          <p class="card-subtitle">
+            LinkVault è un'applicazione web progettata per la gestione e l'organizzazione dei propri link preferiti, con l'obiettivo 
+            di ridurre la necessità di utilizzare la barra dei preferiti del browser, rendendo la raccolta dei siti web accessibile
+            da un'unica piattaforma.
+            <br>
+            Dopo aver effettuato la registrazione e aver effettuato l'accesso al proprio profilo tramite username e password, l'utente 
+            può visualizzare e consultare la propria raccolta di link, organizzata secondo due modalità di visualizzazione: griglia o 
+            elenco, a seconda delle proprie preferenze. 
+            <br>
+            Cliccando sull'indirizzo o sull'immagine associata a un sito salvato, è 
+            possibile aprirlo direttamente in una nuova scheda del browser.
+            <br>
+            Per rendere l'esperienza di utilizzo più intuitiva e immediata, LinkVault recupera automaticamente la favicon associata 
+            all'indirizzo web salvato, utilizzandola come immagine identificativa del relativo sito.
+          </p>
           <div class="item">
             <div class="itemLink">
-              <img src="./assets/gitHubIcon.png" class="gitIcon"><a href="https://github.com/morix92?tab=repositories">Vai al Repository</a>
+              <img src="./assets/gitHubIcon.png" class="gitIcon"><a href="https://github.com/morix92/LinkVault">Vai al Repository</a>
+            </div>
+            <div class="itemLink">
+              <img src="./assets/download.png" class="gitIcon"><a class="disabled" href="progetti/" download>Scarica zip (Attualmente non disponibile)</a>
             </div>
           </div>
 
@@ -107,15 +165,37 @@
           </button>
 
           <div class="card-details">
-            <p>Tecnologie di sviluppo utilizzate:</p>
-            <ul>
-              <li>HTML: struttura delle pagine web;</li>
+            <p class="card-title">Focus del progetto</p>
+            <p class="card-subtitle">
+            Applicazione web: progettazione dell'architettura software e containerizzazione dell'ambiente applicativo
+            </p>
+
+            <p class="card-title">Descrizione e scelte progettuali</p>
+            <p class="card-subtitle">
+            Il progetto è stato sviluppato con particolare attenzione alla progettazione architetturale e alla configurazione degli 
+            ambienti applicativi, con l'obiettivo di rendere l'intero ambiente di esecuzione facilmente riproducibile.
+            <br>
+            L'applicazione combina un'interfaccia utente minimale realizzata con Angular, un backend basato 
+            su Node.js ed Express, organizzato attraverso una struttura modulare e dedicato alla gestione della logica applicativa 
+            e delle API, e un database relazionale PostgreSQL per la persistenza dei dati.
+            <br>
+            Frontend, backend e database vengono eseguiti come servizi distinti e orchestrati tramite Docker Compose.
+            Questo approccio consente di ridurre la configurazione manuale dell'ambiente di esecuzione e di rendere il progetto 
+            facilmente replicabile su macchine differenti.
+            </p>
+
+            <p class="card-title">Tecnologie utilizzate</p>
+            <ul class="card-subtitle">
+              <li>HTML: struttura dei contenuti dell'interfaccia utente;</li>
               <li>CSS: styling e design responsive;</li>
-              <li>JavaScript / TypeScript: linguaggi di sviluppo full-stack;</li>
+              <li>JavaScript / TypeScript: sviluppo frontend e backend;</li>
               <li>Angular 21: framework per la realizzazione di Single Page Application (SPA);</li>
-              <li>Node.js + Express: gestione delle richieste HTTP e sviluppo di API lato Server;</li>
-              <li>PostgreSQL: database relazionale;</li>
-              <li>Docker: containerizzazione dell'ambiente applicativo (frontend, backend e database) per garantire portabilità, semplicità di avvio e riproducibilità del progetto.</li>
+              <li>Node.js + Express: implementazione delle API REST e gestione della logica applicativa lato server;</li>
+              <li>bcrypt: protezione delle credenziali utente;</li>
+              <li>PostgreSQL: database relazionale per la persistenza dei dati;</li>
+              <li>Docker: containerizzazione dei componenti applicativi;</li>
+              <li>Docker Compose: orchestrazione e configurazione dell'ambiente multi-container;</li>
+              <li>Nginx: distribuzione degli artefatti compilati del frontend Angular.</li>         
             </ul>
           </div>
 
@@ -126,8 +206,19 @@
       <div class="card">
         <img src="./progetti/HomeHub/HomeHub.png" alt="App 3" class="imgProject">
         <div class="card-content">
-          <div class="card-title">HomeHub</div>
-          <div class="card-subtitle">Home Hub è un'applicazione Android pensata per rimanere in esecuzione su un tablet domestico sempre acceso e accessibile, tramite browser, da qualsiasi altro dispositivo presente nella stessa rete locale (non solo Android). L'obiettivo è creare un hub centralizzato per la gestione di attività quotidiane condiviso tra i componenti della famiglia e accessibile tramite smartphone (oltre che tramite il tablet stesso); le funzionalità principali previste nella prima versione del prodotto sono: task Manager con notifiche, lista della spesa e bacheca (post-it)</div>
+          <p class="card-title">HomeHub</p>
+          <p class="card-subtitle">
+            HomeHub è un'applicazione Android progettata per essere installata ed eseguita su un tablet domestico dedicato, mantenuto 
+            sempre acceso e accessibile tramite browser web da qualsiasi altro dispositivo collegato alla stessa rete locale, 
+            indipendentemente dal sistema operativo utilizzato.
+            <br>
+            L'obiettivo è quello di realizzare un hub centralizzato per la gestione delle attività quotidiane della famiglia, offrendo 
+            un punto di riferimento condiviso e costantemente accessibile sia dal tablet principale che da smartphone, computer e altri 
+            dispositivi connessi alla rete domestica.
+            <br>
+            La prima versione dell'applicazione prevede 4 funzionalità principali: Task Manager, Lista della spesa, Bacheca e Finance 
+            Manager.
+          </p>
           <div class="item">
             <div class="itemLink">
               <img src="./assets/gitHubIcon.png" class="gitIcon"><a href="https://github.com/morix92/HomeHub">Vai al Repository</a>
@@ -144,15 +235,43 @@
           </button>
 
           <div class="card-details">
-            <p>Tecnologie di sviluppo utilizzate:</p>
-            <ul>
-              <li>HTML: struttura delle pagine;</li>
+            <p class="card-title">Focus del progetto</p>
+            <p class="card-subtitle">
+              Applicazione Android: Sviluppo Android e architettura client-server in rete locale
+            </p>
+
+            <p class="card-title">Descrizione e scelte progettuali</p>
+            <p class="card-subtitle">
+            Il progetto è stato sviluppato con l'obiettivo di approfondire competenze nello sviluppo Android e nella progettazione 
+            di architetture client-server, integrando tecnologie web e componenti nativi. 
+            <br>
+            L'applicazione è progettata per eseguire frontend, backend e database direttamente su un dispositivo Android, che svolge 
+            contemporaneamente il ruolo di client e server. Grazie a un server HTTP embedded, il dispositivo può esporre l'interfaccia 
+            web e le API attraverso la rete locale, consentendo ad altri dispositivi connessi alla stessa rete di accedere 
+            all'applicazione tramite browser, senza richiedere server dedicati o infrastrutture cloud.
+            <br>
+            Il frontend è realizzato con Angular, mentre il backend è sviluppato in Kotlin e utilizza NanoHTTPD per gestire le richieste 
+            HTTP e le API REST. Per la persistenza dei dati è stato scelto SQLite, un database relazionale embedded che consente di 
+            archiviare le informazioni direttamente sul dispositivo. 
+            <br>
+            Questa architettura permette di concentrare l'intero stack 
+            applicativo su un unico dispositivo, integrando sviluppo Android, tecnologie web, gestione delle API e accesso ai servizi 
+            tramite rete locale.
+            <br>
+            L'applicazione viene distribuita sotto forma di pacchetto APK, da installare su un dispositivo Android; l'accesso da altri 
+            dispositivi, invece, avviene tramite browser, attraverso la rete locale, utilizzando l'indirizzo IP del dispositivo host o un 
+            hostname configurato nella rete domestica
+            </p>
+
+            <p class="card-title">Tecnologie utilizzate</p>
+            <ul class="card-subtitle">
+              <li>HTML: struttura dei contenuti dell'interfaccia utente;</li>
               <li>CSS: styling e design responsive;</li>
-              <li>JavaScript / TypeScript: linguaggi di sviluppo frontend;</li>
+              <li>JavaScript / TypeScript: sviluppo frontend e backend;</li>
               <li>Angular 21: framework per la realizzazione di Single Page Application (SPA);</li>
               <li>Kotlin: linguaggio di sviluppo per applicazioni Android native;</li>
-              <li>NanoHTTPD: server HTTP embedded per applicazioni Android;</li>
-              <li>SQLite: database relazionale embedded</li>
+              <li>NanoHTTPD: server HTTP embedded per la distribuzione degli asset frontend e la gestione delle API REST direttamente sul dispositivo Android.</li>
+              <li>SQLite: database relazionale embedded per la persistenza locale dei dati.</li>
             </ul>
           </div>
 

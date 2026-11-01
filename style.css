@@ -152,11 +152,19 @@ body {
 
 .card-title {
   font-weight: bold;
+  margin-top: 0.9rem;
   margin-bottom: 0.3rem;
 }
 
 .card-subtitle {
   font-size: 0.85rem;
+  margin: 0rem;
+  color: #aaa;
+}
+
+li {
+  font-size: 0.85rem;
+  margin: 0rem;
   color: #aaa;
 }
 
@@ -179,16 +187,7 @@ a:hover {
 }
 
 .card-details.open {
-  max-height: 300px; /* abbastanza grande da contenere il testo */
-}
-
-.card-details p {
-  font-size: 16px;
-}
-
-.card-details li {
-  font-size: 12px;
-  margin-bottom: 2px;
+  max-height: 1200px;
 }
 
 .toggle-btn {
@@ -219,6 +218,11 @@ a:hover {
   transform: rotate(180deg);
 }
 
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
 
 @media (max-width: 1024px) {
 

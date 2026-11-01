@@ -1,29 +1,31 @@
 # BENVENUTI NEL MIO PORTFOLIO!  
-Qui ho raccolto alcuni progetti personali realizzati a scopo didattico, mettendo in pratica ciò che ho imparato nel mio percorso di formazione da sviluppatore.
+I progetti presenti in questo portfolio sono stati sviluppati seguendo un percorso di apprendimento progressivo, utilizzando ogni nuova esperienza progettuale come un'opportunità per ampliare il mio bagaglio tecnico.
+Partendo dalle competenze full-stack acquisite, ho progressivamente approfondito la progettazione architetturale, la containerizzazione e lo sviluppo Android, con l'obiettivo di sperimentare tecnologie e approcci differenti.
 
 https://morix92.github.io/Portfolio/
 
 ## Tecnologie principali
-I progetti presenti in questo portfolio variano dallo sviluppo web full-stack allo sviluppo di applicazioni Android, utilizzando tecnologie moderne per la realizzazione di interfacce, servizi backend e applicazioni embedded.
 
 ### Linguaggi
 - **HTML**: struttura delle pagine web;
 - **CSS**: styling e design responsive;
-- **JavaScript / TypeScript**: sviluppo di applicazioni web full-stack;
+- **JavaScript / TypeScript**: linguaggi di sviluppo di sviluppo frontend e backend;
 - **Kotlin**: sviluppo di applicazioni Android native.
 
 ### Framework e librerie
 - **Angular**: framework per la realizzazione di Single Page Application (SPA);
 - **Express**: framework per lo sviluppo di API REST con Node.js;
-- **NanoHTTPD**: server HTTP embedded per applicazioni Android.
+- **NanoHTTPD**: server HTTP embedded per applicazioni Android;
+- **Nginx**: utilizzato per la distribuzione degli artefatti compilati del frontend Angular;
+- **bcrypt**: libreria utilizzata per l'hashing delle password.
 
 ### Runtime
-- **Node.js**: ambiente di esecuzione per applicazioni JavaScript lato server.
+- **Node.js**: ambiente di esecuzione JavaScript lato server.
 
 ### Database
 - **PostgreSQL**: database relazionale;
 - **SQLite**: database relazionale embedded.
 
 ### Deployment
-- **Tauri**: distribuzione di applicazioni desktop cross-platform;
-- **Docker**: containerizzazione dell'ambiente applicativo.
+- **Tauri**: utilizzato per la distribuzione di applicazioni desktop cross-platform;
+- **Docker e Docker Compose**: strumenti per containerizzazione e configurazione dell'ambiente applicativo.

@@ -87,7 +87,7 @@ body {
 
 .logo-item {
   width: 50%;
-  margin-top: 3rem;
+  margin-top: 8rem;
 }
 
 .item {
@@ -141,6 +141,19 @@ body {
   box-sizing: border-box;
 }
 
+.logoTaskMan {
+  width: 35px;
+  height: auto;
+  object-fit: contain;
+}
+
+.logoLinkVault {
+  width: 35px;
+  height: auto;
+  object-fit: contain;
+  filter: invert(1);
+}
+
 .itemLink {
   display: flex;
   align-items: center;
@@ -151,8 +164,11 @@ body {
 }
 
 .card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-weight: bold;
-  margin-top: 0.9rem;
+  margin-top: 0.3rem;
   margin-bottom: 0.3rem;
 }
 

@@ -69,14 +69,13 @@
             personali, senza necessità di dipendere da servizi esterni o piattaforme cloud.
             <br>
             È possibile creare fino a 4 profili distinti, ciascuno caratterizzato da una gestione indipendente delle proprie categorie e 
-            delle proprie attività. I profili non richiedono autenticazione e sono pensati per consentire anche a più persone, 
-            come familiari o conviventi, di condividere la stessa applicazione mantenendo separate le rispettive organizzazioni.
+            delle proprie attività. I profili non richiedono autenticazione e sono pensati per consentire una distinzione tra diverse tipologie di 
+            profilo, come ad esempio personale e lavoro, oppure semplicemente tra familiari e conviventi.
             <br>
             Il sistema integra inoltre un meccanismo di notifiche Windows che permette di ricevere promemoria relativi alle attività, 
-            indipendentemente dal profilo attualmente selezionato. 
+            indipendentemente dal profilo selezionato del momento. 
             <br>
-            L'avatar e il suono associati alle notifiche possono essere 
-            personalizzati seguendo le indicazioni disponibili nelle FAQ dell'applicazione.
+            Avatar e suono delle notifiche possono essere personalizzati seguendo le indicazioni disponibili nelle FAQ dell'applicazione.
           </p>
           <div class="item">
             <div class="itemLink">
@@ -143,18 +142,18 @@
             può visualizzare e consultare la propria raccolta di link, organizzata secondo due modalità di visualizzazione: griglia o 
             elenco, a seconda delle proprie preferenze. 
             <br>
-            Cliccando sull'indirizzo o sull'immagine associata a un sito salvato, è 
+            Cliccando sul titolo o sull'immagine associata a un sito salvato, è 
             possibile aprirlo direttamente in una nuova scheda del browser.
             <br>
             Per rendere l'esperienza di utilizzo più intuitiva e immediata, LinkVault recupera automaticamente la favicon associata 
-            all'indirizzo web salvato, utilizzandola come immagine identificativa del relativo sito.
+            all'indirizzo web salvato durante l'inserimento di un nuovo link; tuttavia l'url dell'immagine può essere modificato manualmente.
           </p>
           <div class="item">
             <div class="itemLink">
               <img src="./assets/gitHubIcon.png" class="gitIcon"><a href="https://github.com/morix92/LinkVault">Vai al Repository</a>
             </div>
             <div class="itemLink">
-              <img src="./assets/download.png" class="gitIcon"><a class="disabled" href="progetti/" download>Scarica zip (Attualmente non disponibile)</a>
+              <img src="./assets/download.png" class="gitIcon"><a href="progetti/" download>Scarica zip</a>
             </div>
           </div>
 
@@ -179,9 +178,12 @@
             su Node.js ed Express, organizzato attraverso una struttura modulare e dedicato alla gestione della logica applicativa 
             e delle API, e un database relazionale PostgreSQL per la persistenza dei dati.
             <br>
-            Frontend, backend e database vengono eseguiti come servizi distinti e orchestrati tramite Docker Compose.
-            Questo approccio consente di ridurre la configurazione manuale dell'ambiente di esecuzione e di rendere il progetto 
-            facilmente replicabile su macchine differenti.
+            Frontend, backend e database vengono eseguiti come servizi distinti e orchestrati tramite Docker Compose. L'intero ambiente 
+            applicativo può essere avviato tramite un launcher dedicato, che esegue automaticamente la build e l'avvio dello stack 
+            containerizzato, consentendo l'esecuzione del progetto senza installazioni manuali di Node.js, Angular CLI o PostgreSQL 
+            sul sistema ospite.
+            <br>
+            Questo approccio rende l'ambiente facilmente replicabile e coerente tra macchine differenti.
             </p>
 
             <p class="card-title">Tecnologie utilizzate</p>

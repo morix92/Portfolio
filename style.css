@@ -35,12 +35,6 @@ body {
   border-radius: 30%;
 }
 
-.logo{
-  width: 100%;
-  height: 100%;
-  object-fit:cover;
-}
-
 .icon {
   width: 28px;
   height: 28px;
@@ -86,8 +80,18 @@ body {
 }
 
 .logo-item {
-  width: 50%;
-  margin-top: 8rem;
+  position: fixed;
+  bottom: 30px;
+  left: 0;
+  width: calc(15% + 4rem);
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
 }
 
 .item {
@@ -144,16 +148,25 @@ body {
 }
 
 .logoTaskMan {
-  width: 35px;
+  width: 50px;
   height: auto;
+  margin-right: 10px;
   object-fit: contain;
 }
 
 .logoLinkVault {
-  width: 35px;
+  width: 50px;
   height: auto;
+  margin-right: 10px;
   object-fit: contain;
   filter: invert(1);
+}
+
+.logoHomeHub{
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+  object-fit: contain;
 }
 
 .itemLink {
@@ -163,6 +176,7 @@ body {
 
 .card-content {
   padding: 1rem;
+  padding-top: 0;
 }
 
 .card-title {
@@ -242,7 +256,7 @@ a:hover {
     cursor: not-allowed;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
 
   body {
     flex-direction: column;

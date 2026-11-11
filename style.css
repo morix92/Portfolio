@@ -51,6 +51,23 @@ body {
   border-radius: 50%;
 }
 
+.downloadIcon{
+  width: 25px;
+  height: 25px;
+  filter: invert(1); /* Inverte il colore delle linee di un'immagine png --> da nero a bianco */
+  object-fit:cover;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+.infoIcon{
+  width: 32px;
+  height: 32px;
+  filter: invert(1); /* Inverte il colore delle linee di un'immagine png --> da nero a bianco */
+  margin-right: 4px;
+  border-radius: 50%;
+}
+
 .name {
   font-size: 1.3rem;
   font-weight: bold;
@@ -256,6 +273,85 @@ a:hover {
     cursor: not-allowed;
 }
 
+/* ============================= */
+/*       PROGETTI SECONDARI      */
+/* ============================= */
+
+.secondary-title {
+  margin-top: 2rem;
+}
+
+.other-projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.cardOtherProject {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.other-project-main {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logoOpenGate {
+  width: 75px;
+  height: 75px;
+  filter: brightness(100);
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.other-project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.other-project-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.other-project-description {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin: 0;
+}
+
+.other-project-details {
+  border-top: 1px solid #383838;
+  padding-top: 0.7rem;
+}
+
+.other-project-details p {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin: 0;
+}
+
+.other-project-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  font-size: 0.8rem;
+}
+
+
 @media (max-width: 1400px) {
 
   body {
@@ -409,5 +505,34 @@ a:hover {
       margin-bottom: 0.65rem;
   }
 
+
+
+  .cardOtherProject {
+    padding: 0.8rem;
+  }
+
+  .other-project-main {
+    gap: 0.8rem;
+    align-items: flex-start;
+  }
+
+  .logoOpenGate {
+    width: 55px;
+    height: 55px;
+  }
+
+  .other-project-title {
+    font-size: 1rem;
+  }
+
+  .other-project-description {
+    font-size: 0.75rem;
+  }
+
+  .other-project-links {
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: 0.75rem;
+  }
 
 }

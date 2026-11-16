@@ -313,6 +313,13 @@ a:hover {
   flex-shrink: 0;
 }
 
+.logoDBexplorer {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
 .other-project-info {
   display: flex;
   flex-direction: column;

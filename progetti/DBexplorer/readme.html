@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DB Explorer</title>
+
+<style>
+:root{
+    --primary:#2563eb;
+    --secondary:#1e293b;
+    --light:#f8fafc;
+    --border:#e2e8f0;
+    --success:#16a34a;
+}
+
+body{
+    font-family:Segoe UI,Arial,sans-serif;
+    margin:0;
+    line-height:1.6;
+    color:#334155;
+    background:#fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05);
+  overflow: hidden;
+}
+
+header {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+  color: #ffffff;
+  padding: 3rem 2.5rem;
+  position: relative;
+}
+	
+.hero-top {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+header p.subtitle {
+  font-size: 1.05rem;
+  color: #cbd5e1;
+  max-width: 720px;
+  margin-top: 0.5rem;
+}
+
+.logoDBexplorer {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.hero{
+    text-align:center;
+    padding:0;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:10px;
+    color:var(--secondary);
+}
+
+.hero p{
+    max-width:900px;
+    margin:auto;
+    font-size:1.15rem;
+}
+
+.section{
+    margin-top:30px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.section h2{
+    color:var(--secondary);
+    border-bottom:2px solid var(--border);
+    padding-bottom:10px;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card{
+    border:1px solid var(--border);
+    border-radius:12px;
+    padding:20px;
+    background:white;
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+.feature{
+    margin-bottom:15px;
+}
+
+pre{
+    background:#0f172a;
+    color:#fff;
+    padding:15px;
+    border-radius:8px;
+    overflow:auto;
+}
+
+code{
+    font-family:Consolas,monospace;
+}
+
+.note{
+    border-left:4px solid var(--primary);
+    padding:15px;
+    background:#eff6ff;
+    margin:20px 0;
+}
+
+.footer{
+    margin-top:60px;
+    text-align:center;
+    color:#64748b;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #f8fafc;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+nav {
+  background: var(--surface-alt);
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+.attachments {
+	width: 100%;
+	height: auto;
+	display: flex;
+	gap: 10px;
+}
+
+.attachments img {
+	width: 50%;
+	object-fit: cover;
+}
+
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="hero-top">
+
+        <img src="./logo.png" alt="Logo progetto" class="logoDBexplorer">
+
+        <div>
+          <h1>DB Explorer</h1>
+          <p class="subtitle">
+            Strumento per analizzare rapidamente la struttura di database relazionali,
+            generare diagrammi ER automatici, esplorare schemi e relazioni tra tabelle
+            e interagire tramite Intelligenza Artificiale o query SQL diretto.
+          </p>
+        </div>
+      </div>
+
+      <div class="badges">
+        <span class="badge">SQLite</span>
+        <span class="badge">PostgreSQL</span>
+        <span class="badge">MySQL</span>
+        <span class="badge">SQL Server</span>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+      
+      <a href="#funzionalita">Funzionalità</a>
+	  <a href="#assistenteAI">Assistente AI</a>
+	  <a href="#consoleSQL">Console SQL</a>
+	  <a href="#sicurezza">Sicurezza</a>
+      <a href="#diagrammiER">Leggere i Diagrammi ER</a>
+	  <a href="#stack">Stack Tecnologico</a>
+      <a href="#installazione">Installazione e Avvio</a>
+      
+    </nav>
+	
+
+    <section class="section">
+        <h2>Panoramica</h2>
+
+        <p>
+            DB Explorer consente di connettersi a diversi database relazionali e ottenere
+            una rappresentazione completa della loro struttura attraverso report automatici,
+            metriche aggregate e diagrammi Entity Relationship (ER).
+        </p>
+
+        <p>
+            L'applicazione integra un assistente AI basato su Google Gemini che permette di
+            interrogare il database in linguaggio naturale e una console SQL dedicata per
+            eseguire query in modalità diretta senza coinvolgere servizi esterni.
+        </p>
+		<div class="note">
+			<strong>Modalità standalone:</strong>
+			tutte le funzionalità di analisi dello schema, reportistica,
+			diagrammi ER e console SQL sono disponibili anche senza configurare
+			una Google Gemini API Key. In assenza della chiave API, l'assistente 
+			AI fornirà un messaggio di errore chiaro.
+		</div>
+    </section>
+
+    <section class="section" id="funzionalita">
+        <h2>Funzionalità Principali</h2>
+
+        <div class="card-grid">
+
+            <div class="card">
+                <h3>Multi Database</h3>
+                <p>
+                    Compatibile con SQLite, PostgreSQL, MySQL/MariaDB e SQL Server.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Diagrammi ER Automatici</h3>
+                <p>
+                    Generazione dinamica delle relazioni tra tabelle tramite Mermaid.js.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>AI Assistant</h3>
+                <p>
+                    Analisi dello schema e supporto alle query tramite le API di Google Gemini.
+                </p>
+            </div>
+			 
+			<div class="card">
+                <h3>Privacy by Design</h3>
+                <p>
+                    Richiesta esplicita di consenso prima di consentire a Gemini l'accesso ai dati reali.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>SQL Console</h3>
+                <p>
+                    Esecuzione diretta di query SELECT senza utilizzo dell'assistente AI.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Protezione Read-Only</h3>
+                <p>
+                    Blocco automatico di INSERT, UPDATE, DELETE, DROP, ALTER e altri comandi di modifica.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section" id="assistenteAI">
+		<h2>Assistente AI</h2>
+
+		<p>
+			L'assistente basato su Google Gemini consente di esplorare e comprendere
+			la struttura del database utilizzando il linguaggio naturale, senza
+			richiedere competenze SQL specifiche.
+		</p>
+
+		<ul>
+			<li>Analisi delle relazioni tra tabelle</li>
+			<li>Identificazione di chiavi primarie e foreign key</li>
+			<li>Spiegazione della struttura del database</li>
+			<li>Suggerimenti e generazione di query SQL</li>
+		</ul>
+
+		<p>
+			Le funzionalità sopra elencate operano esclusivamente sulle informazioni
+			strutturali del database (schema, tabelle, colonne, vincoli e relazioni)
+			e non richiedono alcun accesso ai dati contenuti nelle tabelle.
+		</p>
+
+		<p>
+			L'eventuale interrogazione dei dati reali tramite l'assistente AI è invece
+			subordinata a un consenso esplicito dell'utente. Solo dopo l'autorizzazione
+			Gemini avrà accesso ai dati e potrà rispondere alle richieste che coinvolgono
+			il contenuto del database.
+		</p>
+
+		<div class="note">
+			<strong>Privacy by Design:</strong> per impostazione predefinita
+			nessun dato applicativo viene condiviso con Google. L'accesso ai dati
+			è una funzionalità opzionale che richiede un'esplicita autorizzazione
+			dell'utente.
+		</div>
+
+		<p>
+			Se ad esempio provassimo a lanciare una 'Select' con o senza consenso, otterremmo due risultati completamente diversi:
+		</p>
+		<ul>
+            <li>Nel primo caso, l'assistente AI restituirebbe il dato presente nel DB;</li>
+            <li>Senza consenso, invece, analizzerebbe la struttura e fornirebbe un feedback generico basandosi sulle sole informazioni che ha</li>
+        </ul>
+
+		<div class="attachments">
+			<img src="./queryConConsenso.png" alt="conConsenso">
+			<img src="./querySenzaConsenso.png" alt="senzaConsenso">
+		</div>
+	
+		<div class="note">
+			<strong>Nota:</strong> Il servizio AI utilizza le API pubbliche di Google Gemini.
+			In caso di elevato traffico potrebbero verificarsi rallentamenti o
+			indisponibilità temporanee. <br> 
+			Inoltre Google applica limiti di utilizzo giornalieri alle API Key del piano gratuito.
+		</div>
+	</section>
+
+    <section class="section" id="consoleSQL">
+        <h2>Console SQL Integrata</h2>
+
+        <p>
+            La console SQL permette di eseguire query (di sola lettura) direttamente sul backend,
+            senza passare attraverso l'AI.
+        </p>
+
+        <ul>
+            <li>Maggiore velocità di esecuzione</li>
+            <li>Nessuna esposizione dei dati a servizi terzi</li>
+            <li>Output immediato dei risultati</li>
+        </ul>
+
+    </section>
+
+    <section class="section" id="sicurezza">
+        <h2>Sicurezza</h2>
+
+        <p>
+            L'applicazione è progettata per operare esclusivamente in modalità read-only.
+        </p>
+
+        <ul>
+            <li>Blocco di INSERT</li>
+            <li>Blocco di UPDATE</li>
+            <li>Blocco di DELETE</li>
+            <li>Blocco di DROP</li>
+            <li>Blocco di ALTER</li>
+            <li>Validazione lato backend</li>
+            <li>Controllo centralizzato delle query eseguibili</li>
+        </ul>
+    </section>
+
+    <section class="section" id="diagrammiER">
+        <h2>Interpretazione dei Diagrammi ER</h2>
+
+        <p>
+            I diagrammi ER utilizzano la notazione Crow's Foot per descrivere
+            le cardinalità delle relazioni tra entità.
+        </p>
+
+        <ul>
+            <li><strong>||</strong> → Esattamente uno</li>
+            <li><strong>|o</strong> → Da zero a uno</li>
+            <li><strong>}|</strong> → Da uno a molti</li>
+            <li><strong>o{</strong> → Da zero a molti</li>
+        </ul>
+
+        <div class="note">
+            <strong>Nota:</strong> Le relazioni molti-a-molti vengono rappresentate tramite tabelle ponte.<br>
+            Nel database demo, ad esempio, la relazione tra Orders e Products
+            viene gestita attraverso la tabella Order_Items.
+        </div>
+    </section>
+
+    <section class="section" id="stack">
+        <h2>Stack Tecnologico</h2>
+
+        <div class="card-grid">
+
+            <div class="card">
+                <h3>Backend</h3>
+                <p>Node.js, Express, dotenv</p>
+            </div>
+
+            <div class="card">
+                <h3>Database Drivers</h3>
+                <p>sqlite3, pg, mysql2, mssql</p>
+            </div>
+
+            <div class="card">
+                <h3>AI</h3>
+                <p>@google/genai (Google Gemini SDK)</p>
+            </div>
+
+            <div class="card">
+                <h3>Frontend</h3>
+                <p>HTML5, CSS3, JavaScript ES6+, Mermaid.js</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section" id="installazione">
+        <h2>⚙️ Installazione e Avvio</h2>
+
+        <h3>1. Clonazione Repository</h3>
+
+<pre><code>git clone https://github.com/morix92/DBexplorer</code></pre>
+
+        <h3>2. Installazione Dipendenze</h3>
+
+<pre><code>npm install</code></pre>
+
+        <h3>3. Configurazione API Key Gemini</h3>
+
+        <p>
+            Modificare il file ".env" , inserendo all'interno la propria API Key Google.
+        </p>
+
+        <p>
+            È possibile generare una chiave gratuita da:
+            <a href="https://aistudio.google.com" target="_blank">
+                Google AI Studio
+            </a>
+        </p>
+
+        <h3>4. Avvio del Server</h3>
+
+<pre><code>node server.js</code></pre>
+
+        <h3>5. Apertura Applicazione</h3>
+
+        <p>
+            Aprire il browser all'indirizzo:
+            <a href="http://localhost:3000" target="_blank">
+                http://localhost:3000
+            </a>
+        </p>
+
+    </section>
+
+    <div class="footer">
+        <p>
+            DB Explorer • Documentazione del progetto
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,6 +1,7 @@
 # BENVENUTI NEL MIO PORTFOLIO!  
 I progetti presenti in questo portfolio sono stati sviluppati seguendo un percorso di apprendimento progressivo, utilizzando ogni nuova esperienza progettuale come un'opportunità per ampliare il mio bagaglio tecnico.
-Partendo dalle competenze full-stack acquisite, ho progressivamente approfondito la progettazione architetturale, la containerizzazione e lo sviluppo Android, con l'obiettivo di sperimentare tecnologie e approcci differenti.
+
+Partendo dalle competenze full-stack acquisite, ho successivamente approfondito la progettazione architetturale, la containerizzazione, l'integrazione di servizi di intelligenza artificiale e lo sviluppo Android, affrontando di volta in volta nuove sfide progettuali e sperimentando architetture e tecnologie differenti.
 
 https://morix92.github.io/Portfolio/
 
@@ -25,6 +26,9 @@ https://morix92.github.io/Portfolio/
 ### Database
 - **PostgreSQL**: database relazionale;
 - **SQLite**: database relazionale embedded.
+
+### Intelligenza Artificiale
+- **Google Gemini**: integrazione di servizi di intelligenza artificiale tramite API e SDK ufficiali, per l'implementazione di funzionalità di analisi e interrogazione dei database in linguaggio naturale.
 
 ### Deployment
 - **Tauri**: utilizzato per la distribuzione di applicazioni desktop cross-platform;

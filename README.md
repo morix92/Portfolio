@@ -28,7 +28,7 @@ https://morix92.github.io/Portfolio/
 - **SQLite**: database relazionale embedded.
 
 ### Intelligenza Artificiale
-- **Google Gemini**: integrazione di servizi di intelligenza artificiale tramite API e SDK ufficiali.
+- **Google Gemini**: integrazione di servizi di intelligenza artificiale tramite API e SDK ufficiali, per l'implementazione di funzionalità di analisi e interrogazione dei database in linguaggio naturale.
 
 ### Deployment
 - **Tauri**: utilizzato per la distribuzione di applicazioni desktop cross-platform;
